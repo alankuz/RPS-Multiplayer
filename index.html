@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,26 +8,30 @@
     <title>Rock Paper Scissors</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-<h1>[Rock Paper Online]</h1>
-<h2>Select Your Fighter!</h2>
+    <div id="header">
+        <h1>[Rock Paper Online]</h1>
+        <h2 id="fighter">Select Your Fighter!</h2>
+    </div>
 
-<div id="imgcontainer">
-<img id="rock" src="assets/images/rock.jpg">
-<img id="paper" src="assets/images/paper.jpg">
-<img id="scissors" src="assets/images/scissors.jpg">
-</div>
-<div id="readybtn"></div>
-<div id="status"></div>
-<div id="winlose"></div>
-<input type="text" id="chat" value=""><button id="chatsubmit">Enter</button>
-<div id="chatroom"></div>
+    <div id="imgcontainer">
+        <img id="rock" src="assets/images/rock.jpg">
+        <img id="paper" src="assets/images/paper.jpg">
+        <img id="scissors" src="assets/images/scissors.jpg">
+    </div>
+    <div id="readybtn"></div>
+    <div id="status"></div>
+    <div id="winlose"></div>
+    <input type="text" id="chat" value=""><button id="chatsubmit">Enter</button>
+    <div id="chatroom"></div>
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
-<script src="assets/javascript/game.js"></script> 
-<script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-database.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+    <script src="assets/javascript/game.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-database.js"></script>
 </body>
+
 </html>

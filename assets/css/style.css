@@ -1,9 +1,52 @@
-img {
-    width: 25%;
-    margin: 0 auto;
-
+body {
+    background-color: gold;
 }
+img {
+    width: 33%;
+    height: 450px;
+    object-fit: fill;
+    margin: 0 auto;
+}
+
 #imgcontainer {
 border: solid 2px;
+margin-bottom: 10px;
+}
 
+#chatroom {
+    width: 33%;
+    margin-top: 1%;
+    margin-left:1%;
+    padding-left:0.5%;
+    border: 2px solid green;
+    background-color:  rgba(20, 20, 20, 0.623);
+    color: white;
+}
+
+#chatroom p {
+    margin-top:2px;
+    margin-bottom:2px;
+}
+
+#header {
+    text-align: center;
+    width: 500px;
+    left: 50%;
+    margin: 0 auto;
+    border: 2px solid gray;
+    margin-bottom: 1%;
+    background-color: rgba(20, 20, 20, 0.623);
+    color: wheat;
+}
+
+#chat {
+    margin-left: 1%;
+    margin-top: 1%;
+    font-size: 24px;
+}
+
+#chatsubmit {
+    background-color: rgb(9, 150, 103);
+    color:wheat;
+    font-size: 24px;
 }
