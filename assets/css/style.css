@@ -1,6 +1,7 @@
 body {
-    background-color: gold;
+    background-color: rgb(0, 206, 189);
 }
+
 img {
     width: 33%;
     height: 450px;
@@ -28,6 +29,22 @@ margin-bottom: 10px;
     margin-bottom:2px;
 }
 
+#chat {
+    margin-left: 1%;
+    margin-top: 1%;
+    font-size: 24px;
+}
+
+#chatsubmit, #ready {
+    background-color: rgb(9, 150, 103);
+    color:wheat;
+    font-size: 24px;
+}
+
+#ready {
+    margin-left:1%;
+}
+
 #header {
     text-align: center;
     width: 500px;
@@ -37,16 +54,4 @@ margin-bottom: 10px;
     margin-bottom: 1%;
     background-color: rgba(20, 20, 20, 0.623);
     color: wheat;
-}
-
-#chat {
-    margin-left: 1%;
-    margin-top: 1%;
-    font-size: 24px;
-}
-
-#chatsubmit {
-    background-color: rgb(9, 150, 103);
-    color:wheat;
-    font-size: 24px;
 }
