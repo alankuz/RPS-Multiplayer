@@ -30,7 +30,7 @@ var connectedRef = database.ref(".info/connected");
 
 
 if (pname === null) {
-    pname = 'UnknownPerson99'
+    pname = 'UnknownPerson' + Math.floor((Math.random() * 1000) + 1);
 }
 
 database.ref('chatmessage').push({
@@ -178,35 +178,35 @@ function gamestart(snapshot) {
     if (isplayer1 === true) {
         if (p1An === 0) {
             if (p2An === 0) {
-                $('#winlose').html('<h1>Tie!</h1>')
+                $('#winlose').html('<h1 id="standing">Tie!</h1>')
             }
             if (p2An === 1) {
-                $('#winlose').html('<h1>You Lose!</h1>')
+                $('#winlose').html('<h1 id="standing">You Lose!</h1>')
             }
             if (p2An === 2) {
-                $('#winlose').html('<h1>You Win!</h1>')
+                $('#winlose').html('<h1 id="standing">You Win!</h1>')
             }
         }
         if (p1An === 1) {
             if (p2An === 0) {
-                $('#winlose').html('<h1>You Win!</h1>')
+                $('#winlose').html('<h1 id="standing">You Win!</h1>')
             }
             if (p2An === 1) {
-                $('#winlose').html('<h1>Tie!</h1>')
+                $('#winlose').html('<h1 id="standing">Tie!</h1>')
             }
             if (p2An === 2) {
-                $('#winlose').html('<h1>You Lose!</h1>')
+                $('#winlose').html('<h1 id="standing">You Lose!</h1>')
             }
         }
         if (p1An === 2) {
             if (p2An === 0) {
-                $('#winlose').html('<h1>You Lose!</h1>')
+                $('#winlose').html('<h1 id="standing">You Lose!</h1>')
             }
             if (p2An === 1) {
-                $('#winlose').html('<h1>You Win!</h1>')
+                $('#winlose').html('<h1 id="standing">You Win!</h1>')
             }
             if (p2An === 2) {
-                $('#winlose').html('<h1>Tie!</h1>')
+                $('#winlose').html('<h1 id="standing">Tie!</h1>')
             }
         }
     }
@@ -214,35 +214,35 @@ function gamestart(snapshot) {
     if (isplayer1 === false) {
         if (p2An === 0) {
             if (p1An === 0) {
-                $('#winlose').html('<h1>Tie!</h1>')
+                $('#winlose').html('<h1 id="standing">Tie!</h1>')
             }
             if (p1An === 1) {
-                $('#winlose').html('<h1>You Lose!</h1>')
+                $('#winlose').html('<h1 id="standing">You Lose!</h1>')
             }
             if (p1An === 2) {
-                $('#winlose').html('<h1>You Win!</h1>')
+                $('#winlose').html('<h1 id="standing">You Win!</h1>')
             }
         }
         if (p2An === 1) {
             if (p1An === 0) {
-                $('#winlose').html('<h1>You Win!</h1>')
+                $('#winlose').html('<h1 id="standing">You Win!</h1>')
             }
             if (p1An === 1) {
-                $('#winlose').html('<h1>Tie!</h1>')
+                $('#winlose').html('<h1 id="standing">Tie!</h1>')
             }
             if (p1An === 2) {
-                $('#winlose').html('<h1>You Lose!</h1>')
+                $('#winlose').html('<h1 id="standing">You Lose!</h1>')
             }
         }
         if (p2An === 2) {
             if (p1An === 0) {
-                $('#winlose').html('<h1>You Lose!</h1>')
+                $('#winlose').html('<h1 id="standing">You Lose!</h1>')
             }
             if (p1An === 1) {
-                $('#winlose').html('<h1>You Win!</h1>')
+                $('#winlose').html('<h1 id="standing">You Win!</h1>')
             }
             if (p1An === 2) {
-                $('#winlose').html('<h1>Tie!</h1>')
+                $('#winlose').html('<h1 id="standing">Tie!</h1>')
             }
         }
     }
